@@ -1,12 +1,12 @@
 body {
-    background-image: url('blob:https://www.instagram.com/15fc713c-7a9b-4d79-bbff-1256e703f00e');
+    background-image: url('https://scontent.xx.fbcdn.net/v/t1.15752-9/462554161_947797583886232_8300544721039773463_n.png?_nc_cat=105&ccb=1-7&_nc_sid=0024fc&_nc_ohc=STXMq9higcIQ7kNvgGKy4B9&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent.xx&oh=03_Q7cD1QHys6gZRd_pE4goGpdYkqB-qAZG0vTFdeYFqp8bhvyaxA&oe=6773DCAC');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     text-align: center;
     font-size: 20px;
   }
-  
+
 
   h1 {
     font-family: Impact, fantasy;
