@@ -8,3 +8,12 @@ body {
     font-weight: bold;
     text-align: center;
   }
+
+  h2 {
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    border: 2px solid black;
+    outline: #a3386c solid 10px;
+    margin: auto;  
+    padding: 20px;
+    text-align: center
+  }
