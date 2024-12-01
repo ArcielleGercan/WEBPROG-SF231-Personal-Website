@@ -17,6 +17,8 @@ body {
   a {
     text-decoration: none;
     color: hotpink;
+    font-size: 40px;
+    text-align:center;
     font-weight: bold;
     transition: color 0.3s ease;
   }
