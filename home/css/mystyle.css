@@ -10,9 +10,6 @@ body {
   }
 
   h2 {
-    font-family:Georgia, 'Times New Roman', Times, serif;
     text-align: center;
-    border: 2px solid #a3368c;
-    padding: 10px;
-    display: inline-block;    
+    font-family:Georgia, 'Times New Roman', Times, serif;   
   }
