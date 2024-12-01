@@ -13,7 +13,7 @@ body {
     font-size: 40px;
     font-weight: bold;
     display: inline-block;
-    border: 5px solid darkpink;
+    border: 5px solid #e75480;
   }
 
   a {
@@ -28,6 +28,6 @@ body {
   }
   
   a:hover {
-    color: #572649;
+    color: #e75480;
     text-decoration: underline;
   }
