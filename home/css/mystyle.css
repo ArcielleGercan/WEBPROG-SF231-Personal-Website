@@ -14,7 +14,7 @@ body {
     text-align: center;
     font-size: 40px;
     font-weight: bold;
-    font-color: #9bc995;
+    color: #62021e;
   }
 
   a {
@@ -29,6 +29,10 @@ body {
   }
   
   a:hover {
-    color: #9bc995;
+    color: #62021e;
     text-decoration: underline;
+  }
+
+  p1.oblique {
+    font-style: oblique;
   }
