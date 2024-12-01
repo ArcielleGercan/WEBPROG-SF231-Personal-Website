@@ -34,6 +34,11 @@ body {
     text-decoration: underline;
   }
 
-  p1.oblique {
-    font-style: oblique;
+  .quote {
+    font-style: italic;
+    font-weight: bold;
+  }
+  
+  .quote-author {
+    font-style: italic;
   }
