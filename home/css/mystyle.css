@@ -1,9 +1,8 @@
 body {
     background-image: url('blob:https://www.instagram.com/15fc713c-7a9b-4d79-bbff-1256e703f00e');
-    background-size: cover; /* Ensures the image covers the entire screen */
+    background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    background-attachment: fixed;
     text-align: center;
     font-size: 20px;
   }
