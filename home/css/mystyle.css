@@ -52,3 +52,9 @@ body {
   .quote-author {
     font-style: italic;
   }
+
+  img {
+    border: 5px solid black;
+    max-width: 100%;
+    height: auto;
+  }
