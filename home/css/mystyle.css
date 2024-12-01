@@ -56,6 +56,6 @@ body {
   img {
     padding: 8px solid black;
     border: 10px solid #62021e;
-    max-width: 80%;
+    max-width: 50%;
     height: auto;
   }
