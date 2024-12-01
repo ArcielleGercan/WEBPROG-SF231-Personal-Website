@@ -1,8 +1,10 @@
 body {
-    background-color: lightblue;
+    background-color: lightpink;
   }
 
   h1 {
-    font-family: "Copperplate", papyrus, fantasy;
-    font-size: 40px;
+    font-family: Impact, fantasy;
+    font-size: 60px;
+    font-weight: bold;
+    text-align: center;
   }
