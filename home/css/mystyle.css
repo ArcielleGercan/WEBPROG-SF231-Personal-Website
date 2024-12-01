@@ -20,7 +20,9 @@ body {
     text-align: center;
     font-size: 40px;
     font-weight: bold;
-    color: #62021e;
+    color: lightpink;
+    background-color: black;
+    display: inline-block;
   }
 
   a {
