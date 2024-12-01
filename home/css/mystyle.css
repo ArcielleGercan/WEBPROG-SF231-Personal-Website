@@ -13,3 +13,12 @@ body {
     font-size: 40px;
     font-weight: bold;
   }
+
+  a::after {
+    content: ''; /* Adds decorative content */
+    display: block;
+    width: 0;
+    height: 2px;
+    background: #572649;
+    transition: width 0.3s ease;
+  }
