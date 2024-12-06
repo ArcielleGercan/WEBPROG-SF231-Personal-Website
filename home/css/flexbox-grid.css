@@ -2,41 +2,32 @@
     display: grid;
     grid-template-rows: auto 1fr auto;
     height: 100vh;
-    gap: 10px;
-}
- 
-header, footer {
+  }
+  
+  header, footer {
     background-color: #f0f0f0;
     padding: 20px;
-    text-align: center;
-}
- 
-main {
+  }
+  
+  main {
     display: flex;
     flex-direction: row;
-    gap: 20px;
-}
- 
-.main-content {
+  }
+  
+  .main-content {
     flex: 2;
     background-color: #fff;
     padding: 20px;
-}
- 
-.sidebar {
-    flex: 1;
-    background-color: #f5f5f5;
-    padding: 20px;
-}
- 
-.gallery {
     display: flex;
     flex-wrap: wrap;
-    gap: 10px;
-}
- 
-.gallery img {
-    width: calc(33.333% - 10px);
-    max-width: 100%;
-    height: auto;
-}
+  
+  }
+
+  .main-content > div {
+    background-color: #f1f1f1;
+    width: 300px;
+    margin: 10px;
+    text-align: center;
+    line-height: 35px;
+    font-size: 15px;
+  }
