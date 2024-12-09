@@ -1,61 +1,65 @@
 <!DOCTYPE html>
 <html>
 <head>
-<style>
-  body {
-  background-image: url('https://t3.ftcdn.net/jpg/05/27/04/56/360_F_527045641_wOUhz8CnmaHGWNE3oAg4SmJHQaEl1lte.jpg');
-}
-</style>
-<title>About Me</title>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </head>
 <body>
 
-<div style="background-color:purple;color:white;padding: 10px;">
-  <h1>Personal Profile Web page</h1>
-</div>
-
-<div style="background-color:black;color:white;padding: 10px;"> 
-  <p>About me</p> </div>
-  <p>Hi, I'm Arcielle Marie C. Gercan!
-    I'm from Bulacan, and I have a chill and bubbly personality. I love exploring new things and discovering exciting experiences. 😊</p>
-
-<div style="background-color:black;color:white;padding: 10px;"> 
-  <p>Education/Achievements</p> </div>
-  <p>I'm a 2nd year student at Asia Pacific College, from BSCS-SF231. I was an honor student last school year and am proud to be part of the JISSA organization. </p>
-
-<div style="background-color:black;color:white;padding: 10px;"> 
-  <p>Course</p> </div>
-  <p> Bachelor of Science in Computer Science with specialization in Cybersecurity and Forensics</p>
-
- <div style="background-color:black;color:white;padding: 10px;"> 
-   <p>IT Experience</p> </div>
-   <p> I have gained experience in Java, Python, and SQL, allowing me to develop applications, automate tasks, and manage databases effectively. These skills have been instrumental in completing academic projects and exploring real-world IT solutions. I want to expand my knowledge and skills in IT.</p>
-
-<div style="background-color:black;color:white;padding: 10px;"> 
-  <p>Hobbies and Interests</p> </div>
-  <ul>
-    <li>Playing Instruments</li>
-    <li>Singing</li>
-    <li>Listening to Music</li>
-    <li>Reading Books</li>
-    <li>Playing Online Games</li>
-    <li>Eating Foods</li>
-    <li>Watching Movies</li>
-    <li>Designing</li>
-  </ul>
-
-<div style="background-color:black;color:white;padding: 10px;"> 
-   <p>Goals in life/Dream</p> </div>
-   <p> My goal is to graduate and have a successful career in IT. I also dream of traveling more, exploring new places, and gaining new experiences along the way.</p>
-
-<div style="background-color:black;color:white;padding: 10px;"> 
-  <p>Picture Gallery</p> </div>
-  <img src="https://i.pinimg.com/736x/91/2e/ab/912eabe6831868b041aca2b4e8c3adcc.jpg" alt="Piano">
-  <img src="https://i.pinimg.com/736x/21/00/e6/2100e6ebc5070f5765c2ff5ce0271851.jpg" alt="Uku and Reading">
-  <img src="https://i.pinimg.com/736x/37/e6/3b/37e63bd601a3bff011cf3d4b8d53cf52.jpg" alt="Rain">
-  <img src="https://i.pinimg.com/736x/16/86/4a/16864aa9a8820d74057e83bec15411ff.jpg" alt="Penguin">
-  <img src="https://i.pinimg.com/736x/95/08/31/950831f8f677e4aa2e8e3bddaed0d3cf.jpg" alt="Cute avatar">
-  <img src="https://i.pinimg.com/736x/3c/54/75/3c54751cdaf44bc2f20a36ece8c4860a.jpg" alt="Food">
-
+  <div class="container-fluid mt-3">
+    <h1><div style="background-color:purple;color:white;padding: 10px;">
+      <h1>Personal Profile Web page</h1>
+    </div></h1>
+    <p>In Bootstrap 5, there is an easy way to create equal width columns: just use the <code>.col-md</code> class on a specified number of col elements. Bootstrap will recognize how many columns there are, and each column will get the same width.</p>
+    <p>If the screen size is <strong>less than 768px</strong>, the columns will stack horizontally.</p>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-md bg-primary text-white">1 of 2 <div style="background-color:black;color:white;padding: 10px;"> 
+          <p>About me</p> </div>
+          <p>Hi, I'm Arcielle Marie C. Gercan!
+            I'm from Bulacan, and I have a chill and bubbly personality. I love exploring new things and discovering exciting experiences. 😊</p>
+        </div>
+        <div class="col-md bg-dark text-white">2 of 2 <div style="background-color:black;color:white;padding: 10px;"> 
+          <p>Education/Achievements</p> </div>
+          <p>I'm a 2nd year student at Asia Pacific College, from BSCS-SF231. I was an honor student last school year and am proud to be part of the JISSA organization. </p>
+        </div>
+      </div>  
+    </div>
+    <br>
+    
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-md bg-primary text-white">1 of 4 <div style="background-color:black;color:white;padding: 10px;"> 
+          <p>Course</p> </div>
+          <p> Bachelor of Science in Computer Science with specialization in Cybersecurity and Forensics</p>
+        </div>
+        <div class="col-md bg-dark text-white">2 of 4  <div style="background-color:black;color:white;padding: 10px;"> 
+          <p>IT Experience</p> </div>
+          <p> I have gained experience in Java, Python, and SQL, allowing me to develop applications, automate tasks, and manage databases effectively. These skills have been instrumental in completing academic projects and exploring real-world IT solutions. I want to expand my knowledge and skills in IT.</p>
+       </div>
+        <div class="col-md bg-primary text-white">3 of 4 <div style="background-color:black;color:white;padding: 10px;"> 
+          <p>Hobbies and Interests</p> </div>
+          <ul>
+            <li>Playing Instruments</li>
+            <li>Singing</li>
+            <li>Listening to Music</li>
+            <li>Reading Books</li>
+            <li>Playing Online Games</li>
+            <li>Eating Foods</li>
+            <li>Watching Movies</li>
+            <li>Designing</li>
+          </ul>
+        </div>
+        <div class="col-md bg-dark text-white">4 of 4 <div style="background-color:black;color:white;padding: 10px;"> 
+          <p>Goals in life/Dream</p> </div>
+          <p> My goal is to graduate and have a successful career in IT. I also dream of traveling more, exploring new places, and gaining new experiences along the way.</p>
+       </div>
+      </div>  
+    </div>
+  </div>
+  
 </body>
 </html>
