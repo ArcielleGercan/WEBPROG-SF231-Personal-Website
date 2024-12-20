@@ -1,10 +1,5 @@
 body {
-    background-image: url('https://scontent.xx.fbcdn.net/v/t1.15752-9/462582378_932229005456998_2190052705041635105_n.png?_nc_cat=105&ccb=1-7&_nc_sid=0024fc&_nc_ohc=xpol8rzwUg4Q7kNvgG1iYqa&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent.xx&oh=03_Q7cD1QEqUQDMfay4-YAjeNFtGNYIBkiHj0r0a2sp3Xs5sZ4ssw&oe=67739EEC');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    width=100%;
+    background-color: black;
     text-align: center;
     font-size: 20px;
   }
@@ -22,7 +17,7 @@ body {
     font-family: Impact, fantasy;
     font-size: 60px;
     font-weight: bold;
-    text-align: center;
+    text-align: left;
   }
 
   h2 {
