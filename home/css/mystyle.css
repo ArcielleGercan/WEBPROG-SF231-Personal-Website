@@ -90,3 +90,66 @@ body {
   top: -5px;
   left: 105%;
 }
+
+body {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #000;
+}
+
+.container {
+  display: flex;
+  gap: 10px;
+  cursor: pointer;
+}
+
+.card {
+  width: 200px;
+  height: 120px;
+  border-radius: 15px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  transition: all 0.4s ease;
+}
+
+.card.purple {
+  background-color: #9c4cff;
+  color: white;
+  text-align: left;
+  padding: 15px;
+}
+
+.card.dark {
+  background-color: #1a1a1a;
+  color: #9c4cff;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-start;
+}
+
+.arrow {
+  font-size: 24px;
+  font-weight: bold;
+  margin: 10px;
+  transform: translate(0, 0);
+  transition: transform 0.4s ease;
+}
+
+/* Animation on hover */
+.container:hover .card.purple {
+  transform: translateX(-10px);
+}
+
+.container:hover .card.dark {
+  transform: translateX(10px);
+}
+
+.container:hover .arrow {
+  transform: translate(5px, -5px);
+}
