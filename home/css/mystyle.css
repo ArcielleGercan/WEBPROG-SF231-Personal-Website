@@ -91,6 +91,7 @@ body {
   left: 105%;
 }
 
+/* General reset */
 body {
   margin: 0;
   display: flex;
@@ -98,6 +99,7 @@ body {
   align-items: center;
   min-height: 100vh;
   background-color: #000;
+  font-family: Arial, sans-serif;
 }
 
 .container {
@@ -107,30 +109,34 @@ body {
 }
 
 .card {
-  width: 200px;
-  height: 120px;
+  width: 250px;
+  height: 150px;
   border-radius: 15px;
   overflow: hidden;
   display: flex;
   align-items: center;
   justify-content: center;
   position: relative;
-  transition: all 0.4s ease;
+  transition: all 0.5s ease;
 }
 
 .card.purple {
-  background-color: #9c4cff;
-  color: white;
+  background-color: #1a1a1a; /* Starts dark */
+  color: #ccc;
   text-align: left;
   padding: 15px;
+  transform: scale(0.9);
+  animation: purpleToColor 1s ease forwards;
 }
 
 .card.dark {
   background-color: #1a1a1a;
-  color: #9c4cff;
+  color: #ccc;
   display: flex;
   justify-content: flex-end;
   align-items: flex-start;
+  position: relative;
+  animation: darkToColor 1s ease forwards;
 }
 
 .arrow {
@@ -138,18 +144,46 @@ body {
   font-weight: bold;
   margin: 10px;
   transform: translate(0, 0);
-  transition: transform 0.4s ease;
+  opacity: 0; /* Hidden initially */
+  transition: transform 0.4s ease, opacity 0.4s ease;
 }
 
-/* Animation on hover */
-.container:hover .card.purple {
-  transform: translateX(-10px);
+.number {
+  font-size: 80px;
+  font-weight: bold;
+  color: rgba(255, 255, 255, 0.1);
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  opacity: 1; /* Visible initially */
 }
 
-.container:hover .card.dark {
-  transform: translateX(10px);
+/* Animation keyframes */
+@keyframes purpleToColor {
+  0% {
+    background-color: #1a1a1a;
+    color: #ccc;
+  }
+  100% {
+    background-color: #9c4cff;
+    color: white;
+  }
+}
+
+@keyframes darkToColor {
+  0% {
+    background-color: #1a1a1a;
+  }
+  100% {
+    background-color: #000;
+  }
+}
+
+.container:hover .purple {
+  transform: scale(1);
 }
 
 .container:hover .arrow {
+  opacity: 1; /* Arrow appears on hover */
   transform: translate(5px, -5px);
 }
