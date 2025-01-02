@@ -230,3 +230,17 @@ span{
         margin-top: 4rem;
     }
 }
+.quote, .quote-author {
+    position: absolute;
+    right: 5%;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: right;
+    color: #b74b4b;
+    font-style: italic;
+    font-size: 1.6rem;
+}
+.quote-author {
+    margin-top: 1rem;
+    font-size: 1.4rem;
+}
