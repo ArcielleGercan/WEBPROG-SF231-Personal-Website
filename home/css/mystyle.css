@@ -231,6 +231,7 @@ span{
     }
 }
 .quote, .quote-author {
+    padding-top: 50px;
     text-align: left;
     color: #b74b4b;
     font-style: italic;
@@ -238,4 +239,5 @@ span{
 }
 .quote-author {
     font-size: 1.4rem;
+    padding-top: 0px;
 }
