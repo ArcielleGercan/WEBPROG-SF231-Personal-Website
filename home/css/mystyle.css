@@ -231,7 +231,7 @@ span{
     }
 }
 .quote, .quote-author {
-    text-align: center;
+    text-align: left;
     color: #b74b4b;
     font-style: italic;
     font-size: 1.6rem;
