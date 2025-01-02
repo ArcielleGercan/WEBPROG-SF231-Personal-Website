@@ -231,13 +231,15 @@ span{
     }
 }
 .quote {
-    margin-top: 2rem;
+    margin-top: 3rem;
     text-align: center;
     color: #b74b4b;
     font-style: italic;
     font-size: 1.6rem;
 }
 .quote-author {
-    margin-top: 0.5rem;
     font-size: 1.4rem;
+    text-align: center;
+    color: #b74b4b;
+    font-style: italic;
 }
