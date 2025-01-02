@@ -194,14 +194,20 @@ span{
     }
 }
 @keyframes words{
-    0%, 35%{
+    0%, 20%{
         content: "Libra";
     }
-    36%, 65%{
+    21%, 40%{
         content: "INFJ";
     }
-    66%, 100%{
+    41%, 60%{
         content: "Computer Science student";
+    }
+    61%, 80%{
+        content: "Libra";
+    }
+    81%, 100%{
+        content: "INFJ";
     }
 }
 @media (max-width: 1000px){
