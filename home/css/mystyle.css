@@ -194,20 +194,14 @@ span{
     }
 }
 @keyframes words{
-    0%, 20%{
-        content: "Web Developer";
+    0%, 35%{
+        content: "Libra";
     }
-    21%, 40%{
-        content: "Developer";
+    36%, 65%{
+        content: "INFJ";
     }
-    41%, 60%{
-        content: "Web Designer";
-    }
-    61%, 80%{
-        content: "Youtuber";
-    }
-    81%, 100%{
-        content: "Script Writer";
+    66%, 100%{
+        content: "Computer Science student";
     }
 }
 @media (max-width: 1000px){
