@@ -230,13 +230,14 @@ span{
         margin-top: 4rem;
     }
 }
-.quote, .quote-author {
-    padding-top: 50px;
+.quote {
+    margin-top: 3rem;
     text-align: left;
     color: #b74b4b;
     font-style: italic;
     font-size: 1.6rem;
 }
+
 .quote-author {
     font-size: 1.4rem;
 }
