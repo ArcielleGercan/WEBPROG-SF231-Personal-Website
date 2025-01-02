@@ -194,10 +194,10 @@ span{
 }
 @keyframes words{
     0%, 20%{
-        content: "Libra";
+        content: "INFJ";
     }
     21%, 40%{
-        content: "INFJ";
+        content: "Libra";
     }
     41%, 60%{
         content: "Computer Science student";
