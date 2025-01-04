@@ -243,13 +243,6 @@ span{
     color: #b74b4b;
     font-style: italic;
 }
-.container{
-	width: 100%;
-	padding: 35px 10%;
-}
-.container{
-	padding-right: calc(10% - 30px);
-}
 main.row {
     display: grid;
     grid-template-columns: 1fr 1fr;
