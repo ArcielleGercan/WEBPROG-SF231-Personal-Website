@@ -524,9 +524,10 @@ span {
     font-style: italic;
 }
 
-.experience{
+.experience {
     align-content: center;
 }
+
 .experience h2 {
     margin-bottom: 5rem;
     color: white;
@@ -539,9 +540,12 @@ span {
 }
 
 .experiences-container {
-    display: flex;
+    display: grid;
     grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto auto;
     gap: 2rem;
+    justify-items: center;
+    align-items: center;
 }
 
 .experience-box {
@@ -553,7 +557,7 @@ span {
     height: 30rem;
     width: 60rem;
     object-fit: cover;
-    border-radius:70px;
+    border-radius: 70px;
     border: 8px solid #b74b4b;
     box-shadow: 0 0 10px #b74b4b;
     cursor: pointer;
