@@ -523,3 +523,35 @@ span {
     color: #b74b4b;
     font-style: italic;
 }
+.experience h2 {
+    margin-bottom: 5rem;
+    color: white;
+    text-align: center;
+}
+.experience p {
+    font-size: 1.6rem;
+    text-align: justify;
+}
+.experience-box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 2rem 0;
+}
+.experience-box .box{
+    height: 20rem;
+    width: 26rem;
+    border-radius: 3rem;
+    margin: 2rem;
+    overflow: hidden;
+    cursor: pointer;
+}
+.experience-box .box img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+.experience-box .box:hover img{
+    transform: scale(1,2)
+}
