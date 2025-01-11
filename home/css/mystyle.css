@@ -414,7 +414,7 @@ span {
     object-fit: cover;
     vertical-align: middle;
     border-radius: 4rem;
-    border: 2px solid #b74b4b; /* Ensure border is visible */
+    border: 2px solid #b74b4b;
     box-shadow: 0 0 10px #b74b4b;
     cursor: pointer;
     transition: transform 0.3s ease-in-out;
@@ -423,15 +423,15 @@ span {
     padding: 0 15px;
     display: flex;
     flex-wrap: wrap;
-    align-items: center; /* Corrected invalid value */
+    align-items: center;
     justify-content: space-around;
     gap: 5rem;
 }
 .content h1 {
-    font-size: 4rem; /* Adjusted for readability */
+    font-size: 4rem;
 }
 .content p {
-    font-size: 2rem; /* Adjusted for readability */
+    font-size: 2rem;
 }
 .content {
     flex: 1;
