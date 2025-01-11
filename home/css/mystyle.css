@@ -537,12 +537,12 @@ span {
 .experience p {
     font-size: 1.6rem;
     text-align: justify;
+    padding-bottom: 3rem;
 }
 
 .experiences-container {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: auto auto;
+    grid-template-columns: repeat(2, 1fr);
     gap: 2rem;
     justify-items: center;
     align-items: center;
@@ -566,4 +566,7 @@ span {
 
 .experience-box:hover img {
     transform: scale(1.1);
+}
+.experience .quote, .quote-author{
+    text-align: center;
 }
