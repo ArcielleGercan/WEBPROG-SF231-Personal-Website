@@ -413,6 +413,11 @@ span {
     max-width: 400px;
     object-fit: cover;
     vertical-align: middle;
+    border-radius: 4rem;
+    border-color: #b74b4b;
+    box-shadow: 0 0 10px #b74b4b;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
 }
 .text {
     padding: 0 15px;
@@ -421,6 +426,12 @@ span {
     align-items: center;
     justify-content: space-around;
     gap: 5rem;
+}
+.text h2{
+    font-size: 6rem;
+}
+.text p{
+    font-size: 3rem;
 }
 .content {
     flex: 1;
