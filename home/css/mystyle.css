@@ -532,6 +532,9 @@ span {
     font-size: 1.6rem;
     text-align: justify;
 }
+.experiences-box{
+    grid-template-columns: repeat(3, 1fr);
+}
 .experience-box{
     display: flex;
     align-items: center;
@@ -539,15 +542,15 @@ span {
     flex-wrap: wrap;
     padding: 2rem 0;
 }
-.experience-box .box{
-    height: 20rem;
-    width: 26rem;
+.experience-box{
+    height: 30rem;
+    width: 60rem;
     border-radius: 3rem;
     border: 5px #b74b4b;
     cursor: pointer;
     transition: 0.4s ease-in-out;
 }
-.experience-box .box img{
+.experience-box img{
     height: 100%;
     width: 100%;
     object-fit: cover;
