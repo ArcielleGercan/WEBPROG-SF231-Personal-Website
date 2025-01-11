@@ -24,25 +24,28 @@ header{
     top: 0;
     left: 0;
     width: 100%;
-    padding: 1rem 9%;
+    padding: 4rem 12% 4rem;
     background-color: transparent;
-    filter: drop-shadow(10px);
+    filter: blur(18px);
     display: flex;
     justify-content: space-between;
     align-items: center;
-    z-index: 100;
+    z-index: 5;
 }
 .logo{
     font-size: 3rem;
     color: #b74b4b;
     font-weight: 800;
     cursor: pointer;
-    transition: 0.5s ease;
+    transition: 0.3s ease;
 }
 .logo:hover{
     transform: scale(1.1);
 }
-nav a{
+.logo span{
+    text-shadow: 0 0 25px #b74b4b;
+}
+.navbar a{
     font-size: 1.8rem;
     color: white;
     margin-left: 4rem;
@@ -50,10 +53,15 @@ nav a{
     transition: 0.3s ease;
     border-bottom: 3px solid transparent;
 }
-nav a:hover,
-nav a.active{
+.navbar a:hover,
+.navbar a.active{
     color: #b74b4b;
     border-bottom: 3px solid #b74b4b;
+}
+#menu-icon{
+  font-size: 3.6rem;
+  color: white;
+  display: none;  
 }
 @media(max-width:995px){
     nav{
