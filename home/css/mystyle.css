@@ -523,38 +523,43 @@ span {
     color: #b74b4b;
     font-style: italic;
 }
+
+.experience{
+    align-content: center;
+}
 .experience h2 {
     margin-bottom: 5rem;
     color: white;
     text-align: center;
 }
+
 .experience p {
     font-size: 1.6rem;
     text-align: justify;
 }
-.experiences-box{
-    grid-template-columns: repeat(3, 1fr);
-}
-.experience-box{
+
+.experiences-container {
     display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-wrap: wrap;
-    padding: 2rem 0;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
 }
-.experience-box{
+
+.experience-box {
+    border-radius: 70%;
+    padding: 2rem;
+}
+
+.experience-box img {
     height: 30rem;
     width: 60rem;
-    border-radius: 3rem;
-    border: 5px #b74b4b;
-    cursor: pointer;
-    transition: 0.4s ease-in-out;
-}
-.experience-box img{
-    height: 100%;
-    width: 100%;
     object-fit: cover;
+    border-radius:70px;
+    border: 8px solid #b74b4b;
+    box-shadow: 0 0 10px #b74b4b;
+    cursor: pointer;
+    transition: 0.2s linear;
 }
-.experience-box .box:hover img{
+
+.experience-box:hover img {
     transform: scale(1.1);
 }
