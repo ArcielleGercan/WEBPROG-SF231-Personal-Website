@@ -409,15 +409,21 @@ span {
     width: 50px;
 }
 .text-img {
+    border-radius: 20%;
+}
+.text-img img{
     width: 100%;
     max-width: 400px;
     object-fit: cover;
     vertical-align: middle;
-    border-radius: 4rem;
+    border-radius: 20%;
     border: 2px solid #b74b4b;
     box-shadow: 0 0 10px #b74b4b;
     cursor: pointer;
-    transition: transform 0.3s ease-in-out;
+    transition: 0.2s linear;
+}
+.text-img img:hover {
+    transform: scale(1.1);
 }
 .text {
     padding: 0 15px;
