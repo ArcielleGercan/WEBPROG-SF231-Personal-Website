@@ -543,9 +543,9 @@ span {
     height: 20rem;
     width: 26rem;
     border-radius: 3rem;
-    margin: 2rem;
-    overflow: hidden;
+    border: 5px #b74b4b;
     cursor: pointer;
+    transition: 0.4s ease-in-out;
 }
 .experience-box .box img{
     height: 100%;
@@ -553,5 +553,5 @@ span {
     object-fit: cover;
 }
 .experience-box .box:hover img{
-    transform: scale(1,2)
+    transform: scale(1.1);
 }
