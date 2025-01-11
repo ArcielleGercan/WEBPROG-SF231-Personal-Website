@@ -474,7 +474,7 @@ span {
     border: 5px solid #b74b4b;
     transform: scale(1.03);
 }
-.course-boc .course-info{
+.course-box .course-info{
     display: flex;
     flex-direction: column;
     text-align: left;
