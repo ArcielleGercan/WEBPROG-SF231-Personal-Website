@@ -180,12 +180,12 @@ span{
 .text-animation span{
     position: relative;
 }
-.typing-text span::before{
+.text-animation span::before{
     content: "Libra";
     color: #b74b4b;
     animation: words 20s infinite;
 }
-.typing-text span::after{
+.text-animation span::after{
     content: "";
     background-color: black;
     position: absolute;
