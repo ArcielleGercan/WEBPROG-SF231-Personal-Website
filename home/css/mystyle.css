@@ -408,3 +408,20 @@ span {
     background-color: black;
     width: 50px;
 }
+.text-img {
+    width: 100%;
+    max-width: 400px;
+    object-fit: cover;
+    vertical-align: middle;
+}
+.text {
+    padding: 0 15px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    gap: 5rem;
+}
+.content {
+    flex: 1;
+}
