@@ -427,10 +427,10 @@ span {
     justify-content: space-around;
     gap: 5rem;
 }
-.text h2{
+.content h2{
     font-size: 6rem;
 }
-.text p{
+.content p{
     font-size: 3rem;
 }
 .content {
