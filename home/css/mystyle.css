@@ -481,6 +481,10 @@ span {
     transform: scale(1.03);
 }
 
+.course-container:hover h4{
+    text-shadow: 0 0 10px #b74b4b, 0 0 2px #b74b4b, 0 0 30px #b74b4b, 0 0 40px #b74b4b;
+}
+
 .course-container .course-info {
     display: flex;
     flex-direction: column;
@@ -494,7 +498,7 @@ span {
     font-size: 2.5rem;
     font-weight: 800;
     margin-bottom: 1rem;
-    text-shadow: -1px -1px 0 white, 1px -1px 0 white, -1px 1px 0 white, 1px 1px 0 white;
+    text-shadow: 0 0 10px white, 0 0 0.5px white, 0 0 30px #b74b4b, 0 0 40px #b74b4b;
 }
 
 .course-info p {
