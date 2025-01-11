@@ -164,12 +164,12 @@ span{
     color: black;
     box-shadow: 0 0 25px #b74b4b;
 }
-.typing-text{
+.text-animation{
     font-size: 34px;
     font-weight: 600;
     min-width: 280px;
 }
-.typing-text span{
+.text-animation span{
     position: relative;
 }
 .typing-text span::before{
@@ -185,11 +185,11 @@ span{
     height: 100%;
     border-left: 3px solid black;
     right: -8;
-    animation: cursor 0.6s infinite;
+    animation: cursor 0.6s infinite, typing 20s steos(14) infinite;
 }
 @keyframes cursor{
     to{
-        border-left: 3px solid #b74b4b;
+        border-left: 2px solid #b74b4b;
     }
 }
 @keyframes words{
@@ -207,6 +207,31 @@ span{
     }
     81%, 100%{
         content: "INFJ";
+    }
+}
+@keyframes typing{
+    10%
+    15%
+    30%
+    35%
+    50%
+    55%
+    70%
+    75%
+    90%
+    95%{
+        width: 0;
+    }
+    5%
+    20%
+    25%
+    40%
+    45%
+    50%
+    55%
+    80%
+    85%{
+        width: calc(100% + 8px);
     }
 }
 @media (max-width: 1000px){
