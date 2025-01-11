@@ -426,7 +426,7 @@ span {
     transform: scale(1.1);
 }
 .text {
-    padding: 0 15px;
+    padding: 0 200px;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
