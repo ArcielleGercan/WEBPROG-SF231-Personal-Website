@@ -645,6 +645,7 @@ span {
 .hobbies-item img{
     width: 15rem;
     height: 15rem;
+    object-fit: cover;
     border-radius: 10%;
     border: 3px solid #b74b4b;
     box-shadow: 0 0 25px #b74b4b;
