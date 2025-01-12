@@ -686,45 +686,32 @@ transition: 0.4s ease-in-out;
     font-size: 1.6rem;
 }
 
-.card {
-    max-width: 640px;
+.image-gallery {
+    max-width: 800px;
     margin: 0 auto;
-    position: relative;
+    padding: 20px;
   }
   
-  .flex {
-    display: flex;
+  .carousel {
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
   }
   
-  .items-stretch {
-    align-items: stretch;
+  .carousel img {
+    display: block;
+    width: 100%;
+    height: auto;
   }
   
-  .bg-surface-950 {
-    background-color: #212121;
-  }
-  
-  .text-white {
-    color: white;
-  }
-  
-  .h-10 {
-    height: 2.5rem;
-  }
-  
-  .gap-4 {
-    gap: 1rem;
-  }
-  
-  .justify-center {
-    justify-content: center;
-  }
-  
-  .cursor-pointer {
-    cursor: pointer;
-  }
-  
-  .hover\:bg-white\/10:hover {
-    background-color: rgba(255, 255, 255, 0.1);
+  .carousel-caption {
+    position: absolute;
+    bottom: 15px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 10px;
+    border-radius: 5px;
   }
   
