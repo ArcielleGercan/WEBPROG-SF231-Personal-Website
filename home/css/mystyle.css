@@ -685,3 +685,45 @@ transition: 0.4s ease-in-out;
 .hobbies-item p{
     font-size: 1.3rem;
 }
+.card {
+    max-width: 640px;
+    margin: 0 auto;
+    position: relative;
+  }
+  
+  .flex {
+    display: flex;
+  }
+  
+  .items-stretch {
+    align-items: stretch;
+  }
+  
+  .bg-surface-950 {
+    background-color: #212121;
+  }
+  
+  .text-white {
+    color: white;
+  }
+  
+  .h-10 {
+    height: 2.5rem;
+  }
+  
+  .gap-4 {
+    gap: 1rem;
+  }
+  
+  .justify-center {
+    justify-content: center;
+  }
+  
+  .cursor-pointer {
+    cursor: pointer;
+  }
+  
+  .hover\:bg-white\/10:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+  }
+  
