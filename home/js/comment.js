@@ -1,5 +1,4 @@
-new Vue({
-    el: '#app2',
+const app2 = Vue.createApp({
     data() {
       return {
         name: '',
