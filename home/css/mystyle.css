@@ -577,12 +577,6 @@ span {
 .experience-box:hover img {
     transform: scale(1.1);
 }
-.experience .quote{
-    text-align: center;
-}
-.experience .quote-author {
-    text-align: center;
-}
 
 .goals-content {
     max-width: 120rem;
