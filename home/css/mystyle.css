@@ -567,6 +567,9 @@ span {
 .experience-box:hover img {
     transform: scale(1.1);
 }
-.experience .quote, .quote-author{
+.experience .quote{
+    text-align: center;
+}
+.experience .quote-author {
     text-align: center;
 }
