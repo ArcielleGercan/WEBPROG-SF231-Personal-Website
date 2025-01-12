@@ -1,4 +1,4 @@
-const app = Vue.createApp({
+const app2 = Vue.createApp({
     data() {
       return {
         post: {
@@ -30,4 +30,6 @@ const app = Vue.createApp({
       },
     },
   });
+
+  app2.mount('#app2');
   
