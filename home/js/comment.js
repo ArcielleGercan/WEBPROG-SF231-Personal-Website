@@ -1,25 +1,28 @@
-const app2 = Vue.createApp({
+new Vue({
+    el: '#app2',
     data() {
       return {
-        name: '', 
+        name: '',
         newComment: '',
         comments: [],
-        reactions: {
-          like: 0,
-          love: 0,
-          haha: 0,
-          wow: 0,
-          sad: 0,
-          angry: 0
+        post: {
+          reactions: {
+            like: 0,
+            love: 0,
+            haha: 0,
+            wow: 0,
+            sad: 0,
+            angry: 0
+          }
         }
       };
     },
     methods: {
-      react(type) {
-        this.reactions[type]++;
+      react(reaction) {
+        this.post.reactions[reaction]++;
       },
       addComment() {
-        if (this.name.trim() && this.newComment.trim()) {
+        if (this.name && this.newComment) {
           const timestamp = new Date().toLocaleString();
           this.comments.push({
             name: this.name,
@@ -27,13 +30,11 @@ const app2 = Vue.createApp({
             timestamp: timestamp
           });
           this.newComment = '';
-          this.name = ''; 
+          this.name = '';
         } else {
-          alert('Please enter both a name and a comment!');
+          alert("Please fill in both your name and comment.");
         }
       }
     }
   });
-  
-  app2.mount('#app2');
   
