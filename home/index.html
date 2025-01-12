@@ -240,33 +240,40 @@
 </section>
 
 <section class="comment-section">
-  <div id = "app2">
-  <div>
-    <h2>{{ post.title }}</h2>
-    <p>{{ post.content }}</p>
-  
-    <div class="reactions">
-      <button @click="react('like')">👍 Like ({{ post.reactions.like }})</button>
-      <button @click="react('love')">❤️ Love ({{ post.reactions.love }})</button>
-      <button @click="react('haha')">😂 Haha ({{ post.reactions.haha }})</button>
-      <button @click="react('wow')">😲 Wow ({{ post.reactions.wow }})</button>
-      <button @click="react('sad')">😢 Sad ({{ post.reactions.sad }})</button>
-      <button @click="react('angry')">😡 Angry ({{ post.reactions.angry }})</button>
-    </div>
+  <h2 class = "heading">Comment Section</h2>
+  <div id="app2">
+    <h2 class="heading">Sprinkles of Me ✨ - Share Your Thoughts!</h2>
+    <p>Hi there! I’m so glad you’re exploring my personal website. Please feel free to leave a reaction, share your thoughts, and let me know who you are by adding your name in the section below. Thank you for visiting!</p>
 
-    <div class="comments">
-      <h3>Comments</h3>
-      <ul>
-        <li v-for="(comment, index) in post.comments" :key="index">
-          <p>{{ comment.text }}</p>
-          <small>{{ comment.timestamp.toLocaleString() }}</small>
-        </li>
-      </ul>
-      <textarea v-model="newComment" placeholder="Add a comment..."></textarea>
+    <div>
+      <div>
+        <button @click="react('like')">👍 Like ({{ post.reactions.like }})</button>
+        <button @click="react('love')">❤️ Love ({{ post.reactions.love }})</button>
+        <button @click="react('haha')">😂 Haha ({{ post.reactions.haha }})</button>
+        <button @click="react('wow')">😲 Wow ({{ post.reactions.wow }})</button>
+        <button @click="react('sad')">😢 Sad ({{ post.reactions.sad }})</button>
+        <button @click="react('angry')">😡 Angry ({{ post.reactions.angry }})</button>
+      </div>
+      <div>
+        <label for="name">Your Name:</label>
+        <input type="text" v-model="name" id="name" placeholder="Enter your name" />
+      </div>
+      <div>
+        <label for="comment">Your Comment:</label>
+        <textarea v-model="newComment" id="comment" placeholder="Leave a comment..."></textarea>
+      </div>
       <button @click="addComment">Submit</button>
     </div>
-  </div>
-  </div>
+  
+    <div v-if="comments.length > 0">
+      <h3>Comments:</h3>
+      <ul>
+        <li v-for="(comment, index) in comments" :key="index">
+          <strong>{{ comment.name }}</strong>: {{ comment.text }} ({{ comment.timestamp }})
+        </li>
+      </ul>
+    </div>
+  </div>  
 </section>
 
 <script src="https://cdn.jsdelivr.net/npm/vue@3"></script>

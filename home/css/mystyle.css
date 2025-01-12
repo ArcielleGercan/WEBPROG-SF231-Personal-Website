@@ -732,48 +732,52 @@ transition: 0.4s ease-in-out;
 }
 
 
-.reactions button {
-    margin-right: 10px;
-    padding: 5px 10px;
-    border: none;
-    border-radius: 5px;
-    background-color: #f0f0f0;
-    cursor: pointer;
+.heading {
+    margin-bottom: 1rem;
   }
   
-  .reactions button:hover {
-    background-color: #ddd;
-  }
-  
-  .comments ul {
-    list-style: none;
-    padding: 0;
-  }
-  
-  .comments li {
-    margin-bottom: 10px;
-  }
-  
-  textarea {
-    width: 100%;
-    height: 50px;
-    margin-top: 10px;
-    padding: 5px;
-    border-radius: 5px;
-    border: 1px solid #ccc;
+  #app {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 1rem;
+    font-family: Arial, sans-serif;
   }
   
   button {
-    margin-top: 10px;
-    padding: 5px 10px;
+    margin: 0.5rem;
+    padding: 0.5rem 1rem;
     border: none;
-    border-radius: 5px;
-    background-color: #007bff;
+    background-color: black;
     color: white;
     cursor: pointer;
   }
   
   button:hover {
-    background-color: #0056b3;
+    background-color: #b74b4b;
+  }
+  
+  input, textarea {
+    width: 100%;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  textarea {
+    height: 100px;
+  }
+  
+  label {
+    font-weight: bold;
+  }
+  
+  ul {
+    list-style-type: none;
+    padding-left: 0;
+  }
+  
+  li {
+    padding: 0.5rem 0;
   }
   
