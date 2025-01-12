@@ -1,11 +1,8 @@
-import { createApp, ref } from "vue";
-import "mdb-vue-ui-kit/css/mdb.min.css";
-
-const app = createApp({
-  setup() {
-    const activeIndex = ref(0);
-    const items = ref([
-      { src: "https://scontent-mnl1-1.cdninstagram.com/v/t1.15752-9/473381808_955707172646681_8314144539255699675_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=0024fc&_nc_ohc=VC9qHn11BGsQ7kNvgGDiDIP&_nc_zt=23&_nc_ht=scontent-mnl1-1.cdninstagram.com&oh=03_Q7cD1gF66OwTynyMXpJ-y4p969IZeNOrjo3o2wrNRAIltBU-JA&oe=67AB4A2A", alt: "Image 1", caption: "Slide 1" },
+const app = Vue.createApp({
+  data() {
+    return {
+      images: [
+        { src: "https://scontent-mnl1-1.cdninstagram.com/v/t1.15752-9/473381808_955707172646681_8314144539255699675_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=0024fc&_nc_ohc=VC9qHn11BGsQ7kNvgGDiDIP&_nc_zt=23&_nc_ht=scontent-mnl1-1.cdninstagram.com&oh=03_Q7cD1gF66OwTynyMXpJ-y4p969IZeNOrjo3o2wrNRAIltBU-JA&oe=67AB4A2A", alt: "Image 1", caption: "Slide 1" },
       { src: "https://scontent-mnl1-2.cdninstagram.com/v/t1.15752-9/471791012_1874488376419631_7017690026170038498_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=0024fc&_nc_ohc=ivuDdzWLMSAQ7kNvgFT5u6X&_nc_zt=23&_nc_ht=scontent-mnl1-2.cdninstagram.com&oh=03_Q7cD1gHfMD6ghO_IHHLWKqmoa0gr_qIcnWmlnhffD6yAjDMQ2Q&oe=67AB40C2", alt: "Image 2", caption: "Slide 2" },
       { src: "https://scontent.xx.fbcdn.net/v/t1.15752-9/473023151_796392376010616_8356821401254784342_n.png?_nc_cat=107&ccb=1-7&_nc_sid=0024fc&_nc_ohc=2GeMYPUT4IgQ7kNvgGthqCU&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent.xx&oh=03_Q7cD1gFa3biLtFgcPqgyL0i45lJTNDKG2liXw3VdbW_1MR6h-A&oe=67AB3E9C", alt: "Image 3", caption: "Slide 3" },
       { src: "https://scontent-mnl3-1.cdninstagram.com/v/t1.15752-9/472923551_1528867204489044_9165857664788152387_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=0024fc&_nc_ohc=_Qt7SXP08kAQ7kNvgH-66Ql&_nc_zt=23&_nc_ht=scontent-mnl3-1.cdninstagram.com&oh=03_Q7cD1gEhl8ejCjctt2dinIeUm-_vVu7GTJQ5261VjdJpEQJwlQ&oe=67AB45F1", alt: "Image 4", caption: "Slide 4" },
@@ -19,10 +16,16 @@ const app = createApp({
       { src: "https://scontent-mnl3-1.cdninstagram.com/v/t1.15752-9/473316022_902341552058112_5259580325564591547_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=0024fc&_nc_ohc=ic1x8pd6mgMQ7kNvgGRCR8x&_nc_zt=23&_nc_ht=scontent-mnl3-1.cdninstagram.com&oh=03_Q7cD1gFZ5Wj0SiCbNRxDgtmGo0-ITLYHhssZEhyvlaGvKw-Upw&oe=67AB4442", alt: "Image 12", caption: "Slide 12" },
       { src: "https://scontent.xx.fbcdn.net/v/t1.15752-9/472727758_2408110139550309_1864389887352940187_n.png?_nc_cat=109&ccb=1-7&_nc_sid=0024fc&_nc_ohc=B2RS1tL_HEQQ7kNvgEk20fR&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent.xx&oh=03_Q7cD1gFtMTbI691XHtOhu2PsTd9x69zHi3ybyrF_xXTwo_gmQA&oe=67AB311C", alt: "Image 13", caption: "Slide 13" },
       { src: "https://scontent.xx.fbcdn.net/v/t1.15752-9/467827529_911340944515017_6877975722804921797_n.png?_nc_cat=102&ccb=1-7&_nc_sid=0024fc&_nc_ohc=n65VeWu6Y8UQ7kNvgE43-I2&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent.xx&oh=03_Q7cD1gGfVS3W_ExyC4lF3Z084qxImjFijqqSvsTWQWBt-3XfWw&oe=67AB2750", alt: "Image 14", caption: "Slide 14" },
-    ]);
-
-    return { activeIndex, items };
+      ]
+    };
   },
+  template: `
+    <div class="gallery">
+      <div v-for="image in images" :key="image.id" class="gallery-item">
+        <img :src="image.url" alt="Gallery Image" class="gallery-image" />
+      </div>
+    </div>
+  `
 });
 
-app.mount("#app");
+app.mount('#app');

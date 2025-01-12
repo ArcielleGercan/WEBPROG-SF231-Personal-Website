@@ -685,35 +685,23 @@ transition: 0.4s ease-in-out;
 .hobbies-item p{
     font-size: 1.6rem;
 }
-.image-gallery .heading{
-    margin-bottom: 5rem;
-}
-.image-gallery {
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 20px;
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+    max-width: 1200px;
+    margin: 20px;
   }
   
-  .carousel {
+  .gallery-item {
+    background-color: white;
     border-radius: 10px;
     overflow: hidden;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   }
   
-  .carousel img {
-    display: block;
+  .gallery-image {
     width: 100%;
     height: auto;
+    display: block;
   }
-  
-  .carousel-caption {
-    position: absolute;
-    bottom: 15px;
-    left: 50%;
-    transform: translateX(-50%);
-    color: #fff;
-    background-color: rgba(0, 0, 0, 0.5);
-    padding: 10px;
-    border-radius: 5px;
-  }
-  
