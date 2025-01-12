@@ -7,7 +7,10 @@ const app2 = Vue.createApp({
         reactions: {
           like: 0,
           love: 0,
-          haha: 0
+          haha: 0,
+          wow: 0,
+          sad: 0,
+          angry: 0
         }
       };
     },
