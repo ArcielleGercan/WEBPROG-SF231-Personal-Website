@@ -583,3 +583,48 @@ span {
 .experience .quote-author {
     text-align: center;
 }
+
+.goals-content {
+    max-width: 120rem;
+    object-fit: cover;
+    vertical-align: middle;
+    transition: 0.2s linear;
+    flex: 1;
+}
+.goals-text {
+    padding: 0 300px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    gap: 5rem;
+}
+.goals-text-img img{
+    position: relative;
+    width: 32vw;
+    transition: 0.2s ease-in-out;
+    cursor: pointer;
+}
+.goals-text-img img:hover{
+    transform: scale(1.1);
+}
+.goals-content h1 {
+    font-size: 4rem;
+    padding: 2rem;
+}
+.goals-content p {
+    font-size: 1.6rem;
+    padding: 2rem;
+    padding-top: 0;
+    padding-bottom:0;
+    text-align:justify;
+}
+.goals-content span {
+    accent-color: #b74b4b;
+}
+.goals .quote{
+    text-align: center;
+}
+.goals .quote-author{
+    text-align: center;
+}
