@@ -408,10 +408,10 @@ span {
     background-color: black;
     width: 50px;
 }
-.text-img {
+.content {
     border-radius: 10%;
 }
-.text-img img{
+.content img{
     width: 100%;
     max-width: 400px;
     object-fit: cover;
