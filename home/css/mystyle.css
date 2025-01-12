@@ -426,6 +426,11 @@ span {
 .text-img img{
     position: relative;
     width: 32vw;
+    transition: 0.2s ease-in-out;
+    cursor: pointer;
+}
+.text-img img:hover{
+    transform: scale(1.1);
 }
 .content h1 {
     font-size: 4rem;
@@ -451,6 +456,7 @@ span {
     background: black;
     color: black;
     padding: 50px 15px;
+    padding-bottom: 150px;
 }
 
 .course h2 {
