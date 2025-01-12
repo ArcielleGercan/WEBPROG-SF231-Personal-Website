@@ -409,16 +409,11 @@ span {
     width: 50px;
 }
 .content {
-    width: 100%;
-    max-width: 50rem;
+    max-width: 120rem;
     object-fit: cover;
     vertical-align: middle;
-    border-radius: 10%;
-    border: 4px solid #b74b4b;
-    box-shadow: 0 0 10px #b74b4b;
     transition: 0.2s linear;
     flex: 1;
-    padding: 25px;
 }
 .text {
     padding: 0 300px;
@@ -428,16 +423,13 @@ span {
     justify-content: space-around;
     gap: 5rem;
 }
-.text-img {
-    width: 50px;
-    height: 50px;
-    object-fit: cover;
-    object-position: left;
+.text-img img{
+    position: relative;
+    width: 32vw;
 }
 .content h1 {
     font-size: 4rem;
     padding: 2rem;
-    padding-bottom: 1rem;
 }
 .content p {
     font-size: 1.6rem;
@@ -449,7 +441,12 @@ span {
 .content span {
     accent-color: #b74b4b;
 }
-
+.content .quote{
+    text-align: center;
+}
+.content .quote-author{
+    text-align: center;
+}
 .course {
     background: black;
     color: black;
@@ -467,8 +464,10 @@ span {
     grid-template-columns: repeat(1, 1fr);
     align-content: center;
     gap: 2.5rem;
-    width:800px;
+    max-width: 50%;
+    margin: 0 auto;
 }
+
 
 .course-container {
     background-color: #b74b4b;
@@ -507,7 +506,7 @@ span {
 }
 
 .course-info p {
-    font-size: 1.6rem;
+    font-size: 1.7rem;
     font-weight: 600;
     line-height: 1.7;
     margin: 0;
