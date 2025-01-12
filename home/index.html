@@ -239,8 +239,38 @@
   <p class="quote-author">Piglet, Winnie the Pooh</p>
 </section>
 
+<section class="comment-section">
+  <div>
+
+    <h2>{{ post.title }}</h2>
+    <p>{{ post.content }}</p>
+  
+    <div class="reactions">
+      <button @click="react('like')">👍 Like ({{ post.reactions.like }})</button>
+      <button @click="react('love')">❤️ Love ({{ post.reactions.love }})</button>
+      <button @click="react('haha')">😂 Haha ({{ post.reactions.haha }})</button>
+      <button @click="react('wow')">😲 Wow ({{ post.reactions.wow }})</button>
+      <button @click="react('sad')">😢 Sad ({{ post.reactions.sad }})</button>
+      <button @click="react('angry')">😡 Angry ({{ post.reactions.angry }})</button>
+    </div>
+
+    <div class="comments">
+      <h3>Comments</h3>
+      <ul>
+        <li v-for="(comment, index) in post.comments" :key="index">
+          <p>{{ comment.text }}</p>
+          <small>{{ comment.timestamp.toLocaleString() }}</small>
+        </li>
+      </ul>
+      <textarea v-model="newComment" placeholder="Add a comment..."></textarea>
+      <button @click="addComment">Submit</button>
+    </div>
+  </div>
+</section>
+
 <script src="https://cdn.jsdelivr.net/npm/vue@3"></script>
 <script src="js/myvue.js"></script>
+<script src="js/comment.js"></script>
 
 </body>
 </html>
