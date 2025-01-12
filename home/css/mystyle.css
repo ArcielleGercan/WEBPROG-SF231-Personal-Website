@@ -685,6 +685,9 @@ transition: 0.4s ease-in-out;
 .hobbies-item p{
     font-size: 1.6rem;
 }
+.app .heading{
+    margin-bottom: 5rem;
+}
 .gallery {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
