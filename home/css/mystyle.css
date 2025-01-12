@@ -737,31 +737,45 @@ transition: 0.4s ease-in-out;
   }
   
   #app2 {
-    max-width: 800px;
+    max-width: 1000px;
     margin: 0 auto;
-    padding: 1rem;
-    font-family: Arial, sans-serif;
+    padding: 2rem;
+    font-size: 1.5rem;
   }
-  
+   #app2 p{
+       text-align:center;
+   }
+button-container {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
   button {
-    margin: 0.5rem;
-    padding: 0.5rem 1rem;
-    border: none;
+    margin: 0.9rem;
+    padding: 0.5rem 3rem;
+    border: 3px solid #b74b4b;
+    border-radius: 15px;
     background-color: black;
     color: white;
     cursor: pointer;
-  }
+    margin-bottom: 3rem;
+    margin-top: 3rem;
+}
   
   button:hover {
-    background-color: #b74b4b;
+    background-color: black;
+    box-shadow: 0 0 25px #b74b4b;
+    border-radius: 15px;
+    transform: scale(1.1)
   }
   
   input, textarea {
     width: 100%;
-    padding: 0.5rem;
+    padding: 1rem;
     margin-bottom: 1rem;
     border: 1px solid #ccc;
-    border-radius: 5px;
+    border-radius: 10px;
   }
   
   textarea {
@@ -780,4 +794,26 @@ transition: 0.4s ease-in-out;
   li {
     padding: 0.5rem 0;
   }
-  
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+.social-icons a {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 4rem;
+    height: 4rem;
+    background-color: transparent;
+    border: 0.2rem solid #b74b4b;
+    font-size: 2rem;
+    border-radius: 50%;
+    margin: 3rem 1.5rem 3rem 0;
+    transition: 0.3s ease;
+    color: #b74b4b;
+}
