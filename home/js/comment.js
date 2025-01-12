@@ -37,4 +37,5 @@ new Vue({
       }
     }
   });
-  
+
+  app2.mount('#app2');
