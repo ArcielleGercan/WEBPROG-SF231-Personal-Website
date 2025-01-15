@@ -11,7 +11,7 @@
 }
 
 html {
-    font-size: 62.5%;
+    font-size: 50%;
 }
 
 body {
@@ -416,7 +416,7 @@ span {
     flex: 1;
 }
 .text {
-    padding: 0 300px;
+    padding: 0 150px;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -433,12 +433,12 @@ span {
     transform: scale(1.1);
 }
 .content h1 {
-    font-size: 4rem;
-    padding: 2rem;
+    font-size: 3.5rem;
+    padding: 1rem;
 }
 .content p {
     font-size: 1.6rem;
-    padding: 2rem;
+    padding: 1rem;
     padding-top: 0;
     padding-bottom:0;
     text-align:justify;
@@ -452,7 +452,8 @@ span {
 .content .quote-author{
     text-align: center;
 }
-.course {
+
+.course {  
     background: black;
     color: black;
     padding: 50px 15px;
@@ -466,22 +467,22 @@ span {
 }
 
 .courses-container {
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);
+    display: flex;
+    flex-wrap: wrap;
     align-content: center;
     gap: 2.5rem;
-    max-width: 50%;
+    max-width: 65%;
     margin: 0 auto;
 }
 
 
 .course-container {
     background-color: #b74b4b;
-    height: 330px;
     border-radius: 3rem;
     border: 5px solid transparent;
     cursor: pointer;
     transition: 0.4s ease-in-out;
+    
 }
 
 .course-container:hover {
@@ -505,7 +506,7 @@ span {
 }
 
 .course-info h4 {
-    font-size: 2.5rem;
+    font-size: 3rem;
     font-weight: 800;
     margin-bottom: 1rem;
     text-shadow: 0 0 10px white, 0 0 0.5px white, 0 0 30px #b74b4b, 0 0 40px #b74b4b;
@@ -517,21 +518,6 @@ span {
     line-height: 1.7;
     margin: 0;
     color: black;
-}
-
-.quote {
-    margin-top: 3rem;
-    text-align: center;
-    color: #b74b4b;
-    font-style: italic;
-    font-size: 1.6rem;
-}
-
-.quote-author {
-    font-size: 1.4rem;
-    text-align: center;
-    color: #b74b4b;
-    font-style: italic;
 }
 
 .experience {
@@ -559,6 +545,8 @@ span {
 }
 
 .experience-box {
+    display: flex;
+    flex-wrap: flex;
     border-radius: 70%;
     padding: 2rem;
 }
@@ -647,16 +635,16 @@ span {
 }
 .hobbies-wrapper{
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 4rem;
 }
 .hobbies-item{
-min-height: 550px;
-max-width: 450px;
+min-height: 450px;
+max-width: 250px;
 background: rgba(0,0,0,0.7);
 border: 3px solid rgba(238, 238, 238, 0.2);
 border-radius: 2rem;
-margin: 0 1rem;
+margin: 0 4rem;
 padding: 30px 25px;
 cursor: pointer;
 display: flex;
@@ -689,10 +677,10 @@ transition: 0.4s ease-in-out;
   
   .gallery {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     gap: 5rem;
-    max-width: 1200px;
-    margin: 20px auto;
+      margin: 50px;
+    max-width: 1000px;
     padding: 0;
   }
   
