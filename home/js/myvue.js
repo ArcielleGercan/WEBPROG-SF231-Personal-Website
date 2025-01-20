@@ -2,7 +2,7 @@ const app = Vue.createApp({
   data() {
     return {
       images: [
-        { src: "https://scontent-mnl1-2.cdninstagram.com/v/t1.15752-9/471791012_1874488376419631_7017690026170038498_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=0024fc&_nc_ohc=ivuDdzWLMSAQ7kNvgFT5u6X&_nc_zt=23&_nc_ht=scontent-mnl1-2.cdninstagram.com&oh=03_Q7cD1gHfMD6ghO_IHHLWKqmoa0gr_qIcnWmlnhffD6yAjDMQ2Q&oe=67AB40C2", alt: "Image 2", caption: "🌸" },
+        { src: "pictures/pic1.jfif", alt: "Image 2", caption: "🌸" },
       { src: "https://scontent.xx.fbcdn.net/v/t1.15752-9/473023151_796392376010616_8356821401254784342_n.png?_nc_cat=107&ccb=1-7&_nc_sid=0024fc&_nc_ohc=2GeMYPUT4IgQ7kNvgGthqCU&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent.xx&oh=03_Q7cD1gFa3biLtFgcPqgyL0i45lJTNDKG2liXw3VdbW_1MR6h-A&oe=67AB3E9C", alt: "Image 3", caption: "🍒" },
       { src: "https://scontent.xx.fbcdn.net/v/t1.15752-9/473440474_1369668274200630_4928036950944262021_n.png?_nc_cat=108&ccb=1-7&_nc_sid=0024fc&_nc_ohc=Jfx9yQp2IUsQ7kNvgGCArVk&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent.xx&oh=03_Q7cD1gH3Ag1u12Pk5GCnCBDGJDSR9DhYJOkNcw0qW1Zu4oRAFw&oe=67AB5FF9", alt: "Image 4", caption: "🎀" },
       { src: "https://scontent.xx.fbcdn.net/v/t1.15752-9/460269217_558471613371227_1006433589030257075_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=0024fc&_nc_ohc=goOxcr9KSWMQ7kNvgE1hbq3&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent.xx&oh=03_Q7cD1gHvbZQATekzLPWJSounSuOKxbTwQlPjjjuSbCeDCumx5Q&oe=67AB1AD6", alt: "Image 5", caption: "❤" },
